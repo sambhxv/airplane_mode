@@ -2,54 +2,25 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "prompt",
- "creation": "2024-12-06 15:08:24.706918",
+ "creation": "2024-11-21 16:29:52.974368",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "founding_year",
-  "customer_care_number",
-  "headquarters",
-  "website"
+  "description"
  ],
  "fields": [
   {
-   "fieldname": "founding_year",
-   "fieldtype": "Int",
-   "label": "Founding Year",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "customer_care_number",
+   "fieldname": "description",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Customer Care Number",
-   "reqd": 1
-  },
-  {
-   "fieldname": "headquarters",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Headquarters",
-   "reqd": 1
-  },
-  {
-   "fieldname": "website",
-   "fieldtype": "Data",
-   "label": "Website",
-   "options": "URL"
+   "label": "Description"
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [
-  {
-   "link_doctype": "Airplane",
-   "link_fieldname": "airline"
-  }
- ],
- "modified": "2024-12-06 14:57:57.304833",
+ "links": [],
+ "modified": "2024-12-06 15:04:20.061122",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
- "name": "Airline",
+ "name": "Airplane Ticket Add-on Type",
  "naming_rule": "Set by user",
  "owner": "Administrator",
  "permissions": [
@@ -66,22 +37,27 @@
    "write": 1
   },
   {
+   "create": 1,
+   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
    "role": "Fleet Manager",
-   "share": 1
+   "share": 1,
+   "write": 1
   },
   {
+   "create": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Travel Agent",
-   "share": 1
+   "role": "Flight Crew Member",
+   "share": 1,
+   "write": 1
   },
   {
    "create": 1,
@@ -101,7 +77,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Flight Crew Member",
+   "role": "Travel Agent",
    "share": 1
   }
  ],
