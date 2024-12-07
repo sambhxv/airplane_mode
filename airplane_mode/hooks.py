@@ -138,7 +138,7 @@ scheduler_events = {
 # 		"airplane_mode.tasks.all"
 # 	],
 	"daily": [
-		"airplane_mode.airplane_shop_management.doctype.payment.payment.send_rent_reminders"
+		"airplane_mode.utils.send_rent_reminders"
 	],
 # 	"weekly": [
 # 		"airplane_mode.tasks.weekly"

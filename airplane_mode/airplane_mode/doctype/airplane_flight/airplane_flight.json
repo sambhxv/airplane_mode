@@ -25,9 +25,10 @@
   "gate_number",
   "section_break_nnjh",
   "route",
-  "amended_from",
+  "is_published",
   "column_break_anmc",
-  "is_published"
+  "crew_members",
+  "amended_from"
  ],
  "fields": [
   {
@@ -77,16 +78,6 @@
    "label": "Destination Airport",
    "options": "Airport",
    "reqd": 1
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Airplane Flight",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
   },
   {
    "fieldname": "route",
@@ -148,6 +139,23 @@
   {
    "fieldname": "column_break_anmc",
    "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "crew_members",
+   "fieldtype": "Table",
+   "label": "Crew Members",
+   "options": "Crew Member"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Airplane Flight",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "has_web_view": 1,
@@ -160,7 +168,7 @@
    "link_fieldname": "flight"
   }
  ],
- "modified": "2024-12-07 14:33:22.448535",
+ "modified": "2024-12-07 22:17:26.988592",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Flight",
