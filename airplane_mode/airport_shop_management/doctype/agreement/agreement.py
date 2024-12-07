@@ -16,25 +16,23 @@ class Agreement(Document):
             if contract_end_date < contract_start_date + timedelta(days=365):
                 frappe.throw(
                     _(
-                        "Contract End Date must be at least one year after the Contract Start Date."
+                        "Contract end date must be at least one year after the Contract start date."
                     ),
-                    title=_("Invalid Contract Dates"),
+                    title=_("Invalid contract dates"),
                 )
 
         if self.shop:
             shop_doc = frappe.get_doc("Shop", self.shop)
-            if shop_doc.status == "Rented":
+            if shop_doc.status == "Unavailable":
                 frappe.throw(
-                    _("Shop {0} is not available.").format(
-                        shop_doc.shop_name
-                    ),
+                    _("Shop {0} is not available.").format(shop_doc.shop_name),
                     title=_("Shop already rented"),
                 )
 
     def after_insert(self):
         if self.shop:
             shop_doc = frappe.get_doc("Shop", self.shop)
-            shop_doc.status = "Rented"
+            shop_doc.status = "Unavailable"
             shop_doc.tenant_details = self.tenant
             shop_doc.contract_expiry = self.contract_end
             shop_doc.save(ignore_permissions=True)
