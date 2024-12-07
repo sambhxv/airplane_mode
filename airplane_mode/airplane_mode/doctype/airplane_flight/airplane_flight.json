@@ -25,9 +25,9 @@
   "gate_number",
   "section_break_nnjh",
   "route",
+  "amended_from",
   "column_break_anmc",
-  "is_published",
-  "amended_from"
+  "is_published"
  ],
  "fields": [
   {
@@ -160,7 +160,7 @@
    "link_fieldname": "flight"
   }
  ],
- "modified": "2024-12-07 10:14:46.411836",
+ "modified": "2024-12-07 14:33:22.448535",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Flight",
