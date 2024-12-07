@@ -22,10 +22,12 @@
   "duration",
   "column_break_defi",
   "time_of_departure",
-  "amended_from",
+  "gate_number",
   "section_break_nnjh",
   "route",
-  "is_published"
+  "column_break_anmc",
+  "is_published",
+  "amended_from"
  ],
  "fields": [
   {
@@ -136,6 +138,16 @@
    "fieldname": "destination_airport_code",
    "fieldtype": "Data",
    "label": "Destination Airport Code"
+  },
+  {
+   "fieldname": "gate_number",
+   "fieldtype": "Data",
+   "label": "Gate Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_anmc",
+   "fieldtype": "Column Break"
   }
  ],
  "has_web_view": 1,
@@ -148,7 +160,7 @@
    "link_fieldname": "flight"
   }
  ],
- "modified": "2024-12-06 15:00:12.325632",
+ "modified": "2024-12-07 10:14:46.411836",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Flight",
