@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{airline}-{employee_id}",
+ "autoname": "format:{employee_id}-{airline}",
  "creation": "2024-12-07 08:54:36.697963",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -103,15 +103,27 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "istable": 1,
  "links": [],
- "modified": "2024-12-07 22:20:38.994643",
+ "modified": "2024-12-11 10:48:16.599390",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Crew Member",
  "naming_rule": "Expression",
  "owner": "Administrator",
- "permissions": [],
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
  "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",

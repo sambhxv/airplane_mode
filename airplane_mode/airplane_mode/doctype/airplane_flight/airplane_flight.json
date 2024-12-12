@@ -2,7 +2,7 @@
  "actions": [],
  "allow_guest_to_view": 1,
  "allow_rename": 1,
- "autoname": "format:{airplane}-{MM}-{YYYY}",
+ "autoname": "format:{airplane}-{MM}-{YYYY}-{#####}",
  "creation": "2024-12-06 15:08:24.706918",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -54,6 +54,7 @@
   {
    "fieldname": "duration",
    "fieldtype": "Duration",
+   "hide_seconds": 1,
    "label": "Duration",
    "reqd": 1
   },
@@ -145,7 +146,7 @@
    "fieldname": "crew_members",
    "fieldtype": "Table",
    "label": "Crew Members",
-   "options": "Crew Member"
+   "options": "Flight Crew"
   },
   {
    "fieldname": "amended_from",
@@ -168,7 +169,7 @@
    "link_fieldname": "flight"
   }
  ],
- "modified": "2024-12-07 22:17:26.988592",
+ "modified": "2024-12-11 10:45:22.062618",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Flight",

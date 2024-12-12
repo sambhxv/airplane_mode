@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{flight}-{source_airport_code}-{destination_airport_code}",
+ "autoname": "format:{flight}-{source_airport_code}-{destination_airport_code}-{###}",
  "creation": "2024-12-06 15:08:24.706918",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -177,7 +177,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-12-06 15:12:30.343229",
+ "modified": "2024-12-11 10:24:35.143190",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Ticket",
